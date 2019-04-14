@@ -33,9 +33,43 @@ namespace AppBanco
                     Console.WriteLine("Opção Inválida, pressione uma tecla para tentar novamente...");
                     Console.ReadKey();
                     menuOpcoes();
-                }              
+                }  
+                
+                if(Opcao == 1)
+                {
+                    menuGerente();
+                }
                 
             } while (Opcao != 0);
+        }
+
+        public void menuGerente()
+        {
+            int op = 0;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.WriteLine("***************| MENU GERENTE |********************");
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.WriteLine("[1] Cadastrar conta:");
+                Console.WriteLine("[2] :");
+                Console.WriteLine("[0] Voltar ao menu principal:");
+                Console.WriteLine("----------------------------------------------------------------");
+                Console.Write("Escolha uma das opções acima: ");
+
+                try
+                {
+                    op = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Opção Inválida, pressione uma tecla para tentar novamente...");
+                    Console.ReadKey();
+                    menuOpcoes();
+                }
+            } while (op != 0);
         }
 
 

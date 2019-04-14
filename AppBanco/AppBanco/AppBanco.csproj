@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Banco.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="ContaCorrente.cs" />
-    <Compile Include="ContaPoupanca.cs" />
+    <Compile Include="Conta.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Gerente.cs" />
     <Compile Include="Menu.cs" />

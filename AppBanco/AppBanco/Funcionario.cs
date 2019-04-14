@@ -14,9 +14,8 @@ namespace AppBanco
         public string Endereco { get; set; }
         public string Email { get; set; }
 
-        public Funcionario(int idFuncionario, string nome, string telefone, string endereco, string email)
+        public Funcionario(string nome, string telefone, string endereco, string email)
         {
-            this.IdFuncionario = idFuncionario;
             this.Nome = nome;
             this.Telefone = telefone;
             this.Endereco = endereco;

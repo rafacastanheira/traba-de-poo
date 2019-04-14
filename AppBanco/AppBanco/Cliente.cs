@@ -16,14 +16,12 @@ namespace AppBanco
         public string Email { get; set; }
         public bool NomeSujo { get; set; }
 
-        public Cliente(int idCliente, string nome, string endereco, DateTime dataNascimento, string cpf, string email, bool nomeSujo)
+        public Cliente(string nome, string endereco, DateTime dataNascimento, string cpf, string email)
         {
-            this.IdCliente = idCliente;
             this.Nome = nome;
             this.Endereco = endereco;
             this.DataNascimento = dataNascimento;
             this.Cpf = cpf;
-            this.NomeSujo = nomeSujo;
             this.Email = email;
         }
     }
