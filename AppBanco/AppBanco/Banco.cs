@@ -11,8 +11,11 @@ namespace AppBanco
         public float Armazenar { get; set; }
         public float Emprestar { get; set; }
         public float Receber { get; set; }
+        public List<Conta> Conta { get; set; }
 
-        public void criarConta()
+        //int contaC = 0;
+
+        public void adicionarConta()
         {
             Cliente cliente = new Cliente();
 
