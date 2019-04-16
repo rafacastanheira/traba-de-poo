@@ -69,6 +69,12 @@ namespace AppBanco
                     Console.ReadKey();
                     menuOpcoes();
                 }
+
+                if(op == 1)
+                {
+                    Banco banco = new Banco();
+                    banco.criarConta();
+                }
             } while (op != 0);
         }
 

@@ -16,6 +16,9 @@ namespace AppBanco
         public string Email { get; set; }
         public bool NomeSujo { get; set; }
 
+        public Cliente()
+        { }
+
         public Cliente(string nome, string endereco, DateTime dataNascimento, string cpf, string email)
         {
             this.Nome = nome;

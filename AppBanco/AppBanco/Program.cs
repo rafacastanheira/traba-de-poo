@@ -12,7 +12,7 @@ namespace AppBanco
     {
         static void Main(string[] args)
         {
-            //Preenche uma lista
+            /*//Preenche uma lista
             List<Banco> list = new List<Banco>();
             for (int i = 0; i < 25; i++)
             {
@@ -49,7 +49,10 @@ namespace AppBanco
             }
             catch (IOException)
             {
-            }
+            }*/
+
+            Menu menu = new Menu();
+            menu.menuOpcoes();
 
             Console.ReadKey();
         }

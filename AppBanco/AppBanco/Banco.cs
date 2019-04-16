@@ -15,16 +15,24 @@ namespace AppBanco
         public void criarConta()
         {
             Cliente cliente = new Cliente();
+
             Console.WriteLine("Informe o nome do titular:");
             cliente.Nome = Console.ReadLine();
             Console.WriteLine("Informe o endereço do titular:");
             cliente.Endereco = Console.ReadLine();
             Console.WriteLine("Informe a data de nascimento do titular:");
-            cliente.DataNascimento = Convert.ToDateTime(Console.ReadLine());
+            cliente.DataNascimento = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Informe o CPF do titular:");
             cliente.Cpf = Console.ReadLine();
             Console.WriteLine("Informe o e-mail do titular:");
             cliente.Email = Console.ReadLine();
+
+            Conta conta = new Conta()
+            {
+                Titular = cliente
+            };
+
+            Console.WriteLine("Conta cadastrada com sucesso!");
 
         }
     }
