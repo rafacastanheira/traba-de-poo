@@ -14,6 +14,9 @@ namespace AppBanco
         public string Endereco { get; set; }
         public string Email { get; set; }
 
+        public Gerente()
+        { }
+
         public Gerente(string nome, string telefone, string endereco, string email)
         {
             this.Nome = nome;

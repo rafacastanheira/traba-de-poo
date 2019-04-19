@@ -11,9 +11,16 @@ namespace AppBanco
         public float Armazenar { get; set; }
         public float Emprestar { get; set; }
         public float Receber { get; set; }
-        public List<Conta> Conta { get; set; }
+        public List<Conta> contas { get; set; }
 
-        //int contaC = 0;
+
+        int contaC = 0;
+
+        public Banco()
+        {
+            this.contas = new List<Conta>();            
+        }
+
 
         public void adicionarConta()
         {
@@ -36,7 +43,41 @@ namespace AppBanco
             };
 
             Console.WriteLine("Conta cadastrada com sucesso!");
+        }
+
+        public void deletarConta(int numero)
+        {
+            var p = contas.FirstOrDefault(x => x.Numero == numero);
+            var a = contas.Any(x => x.Numero == numero);
+            if (a == true)
+            {
+                this.contas.Remove(p);
+                Console.WriteLine("Conta deletada com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("ATENÇÃO! A conta informada não foi encontrada");
+            }
+        }
+
+        public void listarCliente(int numero)
+        {
+            var p = contas.FirstOrDefault(x => x.Numero == numero);
+            var a = contas.Any(x => x.Numero == numero);
+            if (a == false)
+            {
+                Console.WriteLine("Não há registros para filtro");
+            }
+            else
+            {
+                Console.WriteLine("-------------------------------------------");
+                Console.WriteLine("Conta: " + p.Numero);
+                Console.WriteLine("Titular: " + p.Titular);
+                Console.WriteLine("Saldo atual: " + p.Saldo);
+                Console.WriteLine("-------------------------------------------");
+            }
 
         }
+
     }
 }
