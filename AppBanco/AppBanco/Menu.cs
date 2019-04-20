@@ -8,12 +8,13 @@ namespace AppBanco
 {
     public class Menu
     {
-        //Banco banco;
-        //int c = 0;
-        //public Menu(Banco banco)
-        //{
-        //    this.banco = banco;
-        //}
+        Banco banco;
+        int c = 0;
+        public Menu(Banco banco)
+        {
+            this.banco = banco;
+        }
+
         public void menuOpcoes()
         {
             int Opcao = 0;
@@ -60,7 +61,8 @@ namespace AppBanco
                 Console.WriteLine("***************| MENU GERENTE |********************");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.WriteLine("[1] Adicionar conta:");
-                Console.WriteLine("[2] :");
+                Console.WriteLine("[2] Deletar conta:");
+                Console.WriteLine("[3] Listar clientes:");
                 Console.WriteLine("[0] Voltar ao menu principal:");
                 Console.WriteLine("----------------------------------------------------------------");
                 Console.Write("Escolha uma das opções acima: ");
@@ -80,9 +82,16 @@ namespace AppBanco
                 {
                     Console.Clear();
                     Console.WriteLine("----------------------------------------------");
-                    Console.WriteLine("CRIAR CONTA");
-                    Banco banco = new Banco();
-                    banco.adicionarConta();
+                    Console.WriteLine("ADICIONAR CONTA");
+                    adicionarConta();
+                    Console.WriteLine("[1] = Voltar");
+                    ConsoleKeyInfo cl;
+                    cl = Console.ReadKey(true);
+                    if (cl.KeyChar == '1')
+                    {
+                        Console.Clear();
+                        menuGerente();
+                    }
                 }
             } while (op != 0);
         }
