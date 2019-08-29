@@ -1,0 +1,11 @@
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.csprojAssemblyReference.cache
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.csproj.CoreCompileInputs.cache
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.AssemblyInfoInputs.cache
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.AssemblyInfo.cs
+/home/rafael/Documentos/projetos/c#/Banco/bin/Debug/netcoreapp2.2/Banco.deps.json
+/home/rafael/Documentos/projetos/c#/Banco/bin/Debug/netcoreapp2.2/Banco.runtimeconfig.json
+/home/rafael/Documentos/projetos/c#/Banco/bin/Debug/netcoreapp2.2/Banco.runtimeconfig.dev.json
+/home/rafael/Documentos/projetos/c#/Banco/bin/Debug/netcoreapp2.2/Banco.dll
+/home/rafael/Documentos/projetos/c#/Banco/bin/Debug/netcoreapp2.2/Banco.pdb
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.dll
+/home/rafael/Documentos/projetos/c#/Banco/obj/Debug/netcoreapp2.2/Banco.pdb
